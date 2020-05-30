@@ -123,9 +123,9 @@ function App() {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={10}>Ten</option>
-                    <option value={20}>Twenty</option>
-                    <option value={30}>Thirty</option>
+                    <option value={1}>Optimus Prime</option>
+                    <option value={2}>Gundam</option>
+                    <option value={3}>Gao Rangers</option>
                   </Select>
                 </FormControl>
               </div>
@@ -174,9 +174,9 @@ function App() {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={10}>Ten</option>
-                    <option value={20}>Twenty</option>
-                    <option value={30}>Thirty</option>
+                    <option value={1}>Optimus Prime</option>
+                    <option value={2}>Gundam</option>
+                    <option value={3}>Gao Rangers</option>
                   </Select>
                 </FormControl>
               </div>
