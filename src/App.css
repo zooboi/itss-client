@@ -27,18 +27,21 @@
   display: flex;
   width: 70%;
   height: 500px;
-  background-color: #474e5c;
+  background-color: #3c414d;
   align-items: flex-start;
   /* flex-direction: column; */
   /* justify-content: center; */
 }
 .status-area{
   background-color: #21242b;
-  width: 50%;
+  width: 76%;
   height: 100%;
 }
+.nav-bar{
+  width: 100%;
+}
 
-.left, .right, .middle, .button-area, .port-area, .port-button{
+.left, .right, .middle, .button-area1, .button-area2, .button-area3, .port-area, .port-button{
   /* width: 33.3%; */
   display: flex;
   align-items: center;
@@ -50,16 +53,73 @@
 }
 .port-area{
   height: 100%;
-  width: 30%;
+  width: 100%;
+  padding-top: 30px;
 }
-.button-area{
-  padding-top: 200px;
+.button-area1{
+  padding-top: 120px;
+}
+.button-area1 .robot, .button-area2 .robot{
+  margin: 5px;
+}
+.button-area2{
+  padding-top: 20px;
+}
+.button-area3{
+  padding-top: 50px;
+}
+.button-area3 legend{
+  color: white;
+  padding: 10px 0;
+}
+.radio{
+  flex-direction: column;
+}
+.radio-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .middle{
   flex-direction: column;
 }
-
+.chose-robot{
+  color: #FFFFFF !important;
+}
 button{
   width: 100%;
   height: 33%;
+}
+.manual-mode, .automatic-mode{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input.align-left{
+  float:left;
+  height: 30px;
+}
+textarea{
+	width: 100%;
+	height: 100px;
+}
+input[type="button"], input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #3F51B5;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
 }
