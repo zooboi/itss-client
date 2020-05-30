@@ -170,7 +170,7 @@ function App() {
                   <InputLabel className="chose-robot" htmlFor="filled-age-native-simple">Chosing robot</InputLabel>
                   <Select
                     native
-                    value={state.age}
+                    value={state.robot}
                     onChange={handleChangeRobot}
                     inputProps={{
                       name: 'age',
