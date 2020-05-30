@@ -76,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const [activeTab, setActiveTab] = useState('1');
   const [radio, setRadio] = React.useState('A');
+  const [robot, setRobot] = React.useState(1);
 
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -85,6 +86,9 @@ function App() {
   };
   const handleChangeRadio = (event, newRadio) => {
     setRadio(newRadio);
+  };
+  const handleChangeRobot = (event, newRobot) => {
+    setRadio(newRobot);
   };
   const [state, setState] = React.useState({
     age: '',
@@ -115,8 +119,8 @@ function App() {
                   <InputLabel className="chose-robot" htmlFor="filled-age-native-simple">Chosing robot</InputLabel>
                   <Select
                     native
-                    value={state.age}
-                    onChange={handleChange}
+                    value={state.robot}
+                    onChange={handleChangeRobot}
                     inputProps={{
                       name: 'age',
                       id: 'filled-age-native-simple',
@@ -167,7 +171,7 @@ function App() {
                   <Select
                     native
                     value={state.age}
-                    onChange={handleChange}
+                    onChange={handleChangeRobot}
                     inputProps={{
                       name: 'age',
                       id: 'filled-age-native-simple',
